@@ -181,12 +181,6 @@ z-index: 999999;
 
 
 </script>
-<script>
-    function play() {
-      var audio = new Audio('media/loading_finalpromo.mp3');
-      audio.play();
-    }
-    </script>
 
 	</head>
 		<style>
@@ -371,6 +365,14 @@ color:white;
 </div>
 
 
+<script>
+
+  function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+  <audio id="audio" preload="auto" src="media/loading_finalpromo.mp3"></audio>
 
 
 

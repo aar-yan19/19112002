@@ -1,0 +1,1046 @@
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width">
+        <title></title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	 	<style>
+
+
+    .loading {
+    	position: fixed;
+    	left: 0px;
+    	top: 0px;
+    	width: 100%;
+    	height: 100%;
+			text-align: center;
+    	z-index: 9999999;
+
+    }
+.loadingbar h1
+{
+
+  width:100%;
+
+text-transform: uppercase;
+
+  font-size: 30px;
+  position:absolute;
+  font-weight: lighter;
+  font-family: sans-serif;
+z-index: 999999;
+  text-align:center;
+  letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+.loading2 {
+    	position: fixed;
+    	left: 0px;
+    	top: 0px;
+    	width: 100%;
+      display: none;
+    	height: 100%;
+			text-align: center;
+    	z-index: 9999999;
+
+    }
+.loadingbar2 h1
+{
+
+  width:100%;
+
+text-transform: uppercase;
+filter: blur(3px);
+  font-size: 30px;
+  pointer-events: none;
+  position:absolute;
+  font-weight: lighter;
+  font-family: sans-serif;
+z-index: 999999;
+  text-align:center;
+  letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .loading {
+    	position: fixed;
+    	left: 0px;
+    	top: 0px;
+    	width: 100%;
+    	height: 100%;
+			text-align: center;
+    	z-index: 9999999;
+
+    }
+.loadingbar h1
+{
+
+  width:100%;
+
+text-transform: uppercase;
+
+  font-size: 20px;
+  position:absolute;
+  font-weight: lighter;
+  font-family: sans-serif;
+z-index: 999999;
+  text-align:center;
+  letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+.loading2 {
+    	position: fixed;
+    	left: 0px;
+    	top: 0px;
+    	width: 100%;
+      display: none;
+    	height: 100%;
+			text-align: center;
+    	z-index: 9999999;
+
+    }
+.loadingbar2 h1
+{
+
+  width:100%;
+
+text-transform: uppercase;
+filter: blur(3px);
+  font-size: 20px;
+  pointer-events: none;
+  position:absolute;
+  font-weight: lighter;
+  font-family: sans-serif;
+z-index: 999999;
+  text-align:center;
+  letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+}
+
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+<script>
+
+	$(window).load(function() {
+
+	$(".loading").delay(1000).hide(0);
+  $(".loading2").delay(1000).show(0);
+   // $(".loading").css({'filter': 'blur(5px)'});
+
+        $(".audiowarning").delay(1000).show(0);
+        $(".audiowarning_check").delay(1000).show(0);
+       // document.getElementById("audio").play();
+	});
+
+
+  $(document).ready(function(){
+  $( ".audiowarning_check" ).click(function() {
+    $(".audiowarning2").show();
+    $(".audiowarning_check2").show(0);
+
+
+       $(".audiowarning").css({'filter': 'blur(3px)'});
+       $(".audiowarning").css({'pointer-events': 'none'});
+       $(".audiowarning_check").css({'filter': 'blur(3px)'});
+       $(".audiowarning_check").css({'pointer-events': 'none'});
+});
+  });
+
+
+  $(document).ready(function(){
+  $( ".audiowarning_check2" ).click(function() {
+    $(".audiowarning2").fadeOut();
+    $(".audiowarning").fadeOut();
+    $(".loading").fadeOut();
+    $(".loading2").fadeOut();
+    $(".audiowarning_check2").fadeOut();
+    $(".audiowarning_check").fadeOut();
+    $(".audiowarning_check2").css({'pointer-events': 'none'});
+    $(".textintro1").delay(1800).fadeIn("slow");
+    $(".textintro1blur").delay(5500).show(0);
+    $(".textintro1").delay(5500).hide(0);
+    $(".textintro2").delay(6000).show(0);
+    $(".textintro1blur").delay(2400).hide(0);
+    $(".textintro2extra").delay(6200).show(0);
+    $(".textintro2").delay(1900).hide(0);
+    $(".textintro2extra").delay(1700).hide(0);
+
+    $(".majorreveal").delay(8350).show(0);
+    $(".majorreveal").delay(7000).hide(0);
+    $(".majorreveal2").delay(16400).show(0);
+    $("#blinkandmiss").delay(16400).show(0);
+
+
+
+
+
+
+});
+  });
+
+</script>
+
+	</head>
+		<style>
+	    *{
+
+	background:black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+
+a {
+	text-decoration: none;
+	color: #cecece;
+	outline: none;
+	font-weight:bold;
+	letter-spacing:1px;
+}
+
+body{
+     -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+
+}
+
+
+
+ul {list-style:none;}
+input[type="submit"]:active{
+	box-shadow: inset 0px 0px 3px black;
+
+}
+::selection {
+    background: white;
+    color: grey;
+}
+	</style>
+<body>
+  <div class="loading">
+    <div class='loadingbar' id='loadingbar1'>
+      <h1>loading
+</h1>
+  </div>
+</div>
+
+<div class="loading2">
+  <div class='loadingbar2' id='loadingbar2'>
+    <h1>loaded
+</h1>
+</div>
+</div>
+
+<div class="audiowarning">
+      <h1>is your volume up?
+</h1>
+<style>
+
+.audiowarning {
+    	position: fixed;
+    	left: 0px;
+    	top: 100px;
+    	width: 100%;
+    	height: 100%;
+        display:none;
+			text-align: center;
+    	z-index: 9999999;
+    	background: black;
+    }
+.audiowarning h1
+{
+
+  width:100%;
+
+  text-transform: uppercase;
+  font-size: 30px;
+  position:absolute;
+  font-weight:lighter;
+  font-family: sans-serif;
+z-index: 999999;
+  text-align:center;
+  letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+.audiowarning {
+    	position: fixed;
+    	left: 0px;
+    	top: 100px;
+    	width: 100%;
+    	height: 100%;
+        display:none;
+			text-align: center;
+    	z-index: 9999999;
+    	background: black;
+    }
+.audiowarning h1
+{
+
+  width:100%;
+
+  text-transform: uppercase;
+  font-size: 20px;
+  position:absolute;
+  font-weight:lighter;
+  font-family: sans-serif;
+z-index: 999999;
+  text-align:center;
+  letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+}
+    </style>
+  </div>
+
+
+<div class="audiowarning_check">
+    <a href="#!"  class="buttons" >yes <i style='font-size:24px' class='fas'>&#xf30b;</i></a>
+
+<style>
+
+.audiowarning_check {
+      position: fixed;
+
+      top: 175px;
+      width: 100%;
+
+      width: 100%;
+      display:none;
+          text-align: center;
+      z-index: 9999999;
+      background: black;
+  }
+.audiowarning_check a
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 30px;
+display: inline-block;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+color:white;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .audiowarning_check a
+{
+
+width:100%;
+height:20px;
+text-transform: uppercase;
+font-size: 20px;
+
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+color:white;
+
+}
+
+}
+
+  </style>
+</div>
+
+
+
+
+
+
+<div class="audiowarning2">
+  <h1>no like fr?!
+</h1>
+<style>
+
+.audiowarning2 {
+  position: fixed;
+  left: 0px;
+  top: 275px;
+  width: 100%;
+  height: 100%;
+    display:none;
+  text-align: center;
+  z-index: 9999999;
+  background: black;
+}
+
+.audiowarning2 h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 30px;
+position:absolute;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.audiowarning2 h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 20px;
+position:absolute;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+}
+
+</style>
+</div>
+
+
+<div class="audiowarning_check2">
+  <a href="#!" onclick="play();" class="buttons" >yeah whatever <i style='font-size:24px' class='fas'>&#xf30b;</i></a>
+
+<style>
+
+.audiowarning_check2 {
+    position: fixed;
+
+    top: 350px;
+    width: 100%;
+
+    width: 100%;
+    display:none;
+        text-align: center;
+    z-index: 9999999;
+    background: black;
+}
+.audiowarning_check2 a
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 30px;
+display: inline-block;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+color:white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .audiowarning_check2 a
+{
+
+width:100%;
+height:30px;
+text-transform: uppercase;
+font-size: 20px;
+
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+color:white;
+}
+
+
+
+}
+</style>
+</div>
+
+
+
+    <script>
+      function play() {
+        var audio = new Audio('media/loadingbar1_1.mp3');
+        audio.play();
+      }
+      </script>
+
+
+
+
+<div class="textintro1">
+  <h1>"so i had an idea...
+</h1>
+<style>
+
+.textintro1 {
+  position: fixed;
+  left: 0px;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+    display:none;
+  text-align: center;
+  z-index: 9999999;
+  background: black;
+}
+
+.textintro1 h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 30px;
+position:absolute;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.textintro1 h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 20px;
+position:absolute;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+}
+
+</style>
+</div>
+
+<div class="textintro1blur">
+  <h1>"so i had an idea...
+</h1>
+<style>
+
+.textintro1blur {
+  position: fixed;
+  left: 0px;
+  top: 100px;
+  width: 100%;
+  filter: blur(3px);
+  height: 100%;
+    display:none;
+  text-align: center;
+  z-index: 9999999;
+  background: black;
+}
+
+.textintro1blur h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 30px;
+position:absolute;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.textintro1blur h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 20px;
+position:absolute;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+}
+
+</style>
+</div>
+
+
+
+<div class="textintro2">
+  <h1>...and it's still an idea"
+</h1>
+<style>
+
+.textintro2 {
+  position: fixed;
+  left: 0px;
+  top: 200px;
+  width: 100%;
+
+  height: 100%;
+    display:none;
+  text-align: center;
+  z-index: 9999999;
+  background: black;
+}
+
+.textintro2 h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 30px;
+position:absolute;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.textintro2 h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 20px;
+position:absolute;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+}
+
+</style>
+</div>
+
+
+
+<div class="textintro2extra">
+  <h1>- aryan
+</h1>
+<style>
+
+.textintro2extra {
+  position: fixed;
+  left: 0px;
+  top: 260px;
+  width: 100%;
+
+
+    display:none;
+  text-align: center;
+  z-index: 9999999;
+  background: black;
+}
+
+.textintro2extra h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 30px;
+position:absolute;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.textintro2extra h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 20px;
+position:absolute;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+}
+
+</style>
+</div>
+
+
+
+
+<div class="majorreveal">
+  <h1>19112002
+</h1>
+<style>
+
+.majorreveal {
+  position: absolute;
+        top: 50%;
+        transform:translateY(-50%);
+  left: 0px;
+  width: 100%;
+    display:none;
+  text-align: center;
+  z-index: 9999999;
+  background: black;
+}
+
+.majorreveal h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 250px;
+font-weight:bolder;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg,#12c2e9, #c471ed, #f64f59);
+	background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+.majorreveal h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 65px;
+
+font-weight:bolder;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000;
+
+}
+
+
+
+}
+
+</style>
+</div>
+
+
+
+<div id = "blinkandmiss">
+  <img src="media/bnm.JPG"  width="300" height="500">
+  </div>
+  <style>
+
+	#blinkandmiss {
+		color: white;
+		position: relative;
+
+		display: none;
+		text-align: center;width: 100%;
+position: absolute;
+top: 50%;
+  transform:translateY(-50%);
+	}
+	#blinkandmiss img {
+		color: white;
+
+
+
+		text-align: center;
+
+	}
+    </style>
+
+
+<div class="majorreveal2">
+  <h1>check this place later,<br> thank you
+</h1>
+<style>
+
+.majorreveal2 {
+  position: absolute;
+        top: 50%;
+        transform:translateY(-50%);
+  left: 0px;
+
+  width: 100%;
+
+
+    display:none;
+  text-align: center;
+  z-index: 9999999;
+  background: black;
+}
+
+.majorreveal2 h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 30px;
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg,#12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+.majorreveal2 h1
+{
+
+width:100%;
+
+text-transform: uppercase;
+font-size: 20px;
+
+font-weight:lighter;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+letter-spacing:7px;
+  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000;
+}
+
+
+
+}
+
+</style>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

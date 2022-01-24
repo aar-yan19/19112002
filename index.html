@@ -7,8 +7,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
-
 	 	<style>
 
 
@@ -162,60 +160,33 @@ z-index: 999999;
 
 	$(".loading").delay(1000).hide(0);
   $(".loading2").delay(1000).show(0);
-   // $(".loading").css({'filter': 'blur(5px)'});
-
         $(".audiowarning").delay(1000).show(0);
         $(".audiowarning_check").delay(1000).show(0);
-       // document.getElementById("audio").play();
+
 	});
 
 
   $(document).ready(function(){
   $( ".audiowarning_check" ).click(function() {
-    $(".audiowarning2").show();
-    $(".audiowarning_check2").show(0);
-
-
-       $(".audiowarning").css({'filter': 'blur(3px)'});
-       $(".audiowarning").css({'pointer-events': 'none'});
-       $(".audiowarning_check").css({'filter': 'blur(3px)'});
-       $(".audiowarning_check").css({'pointer-events': 'none'});
+    $(".majorreveal").delay(1500).fadeIn(1500);
+    $(".majorreveal2").delay(6000).fadeIn(1500);
+    $(".audiowarning_check").hide();
+    $(".audiowarning").hide();
+    $(".audiowarning_check").hide();
+    $(".loading").hide();
+    $(".loading2").hide();
 });
   });
 
 
-  $(document).ready(function(){
-  $( ".audiowarning_check2" ).click(function() {
-    $(".audiowarning2").fadeOut();
-    $(".audiowarning").fadeOut();
-    $(".loading").fadeOut();
-    $(".loading2").fadeOut();
-    $(".audiowarning_check2").fadeOut();
-    $(".audiowarning_check").fadeOut();
-    $(".audiowarning_check2").css({'pointer-events': 'none'});
-    $(".textintro1").delay(1800).fadeIn("slow");
-    $(".textintro1blur").delay(5500).show(0);
-    $(".textintro1").delay(5500).hide(0);
-    $(".textintro2").delay(6000).show(0);
-    $(".textintro1blur").delay(2400).hide(0);
-    $(".textintro2extra").delay(6200).show(0);
-    $(".textintro2").delay(1900).hide(0);
-    $(".textintro2extra").delay(1700).hide(0);
-
-    $(".majorreveal").delay(8350).show(0);
-    $(".majorreveal").delay(7000).hide(0);
-    $(".majorreveal2").delay(16400).show(0);
-    $("#blinkandmiss").delay(16400).show(0);
-
-
-
-
-
-
-});
-  });
 
 </script>
+<script>
+    function play() {
+      var audio = new Audio('media/loading_finalpromo.mp3');
+      audio.play();
+    }
+    </script>
 
 	</head>
 		<style>
@@ -342,7 +313,7 @@ z-index: 999999;
 
 
 <div class="audiowarning_check">
-    <a href="#!"  class="buttons" >yes</a>
+    <a href="#!" onclick="play();" class="buttons" >yes</a>
 
 <style>
 
@@ -400,423 +371,6 @@ color:white;
 </div>
 
 
-
-
-
-
-<div class="audiowarning2">
-  <h1>no like fr?!
-</h1>
-<style>
-
-.audiowarning2 {
-  position: fixed;
-  left: 0px;
-  top: 275px;
-  width: 100%;
-  height: 100%;
-    display:none;
-  text-align: center;
-  z-index: 9999999;
-  background: black;
-}
-
-.audiowarning2 h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 30px;
-position:absolute;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-@media only screen and (max-width: 600px) {
-
-.audiowarning2 h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-position:absolute;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-
-}
-
-</style>
-</div>
-
-
-<div class="audiowarning_check2">
-  <a href="#!" onclick="play();" class="buttons" >yeah whatever</a>
-
-<style>
-
-.audiowarning_check2 {
-    position: fixed;
-
-    top: 350px;
-    width: 100%;
-
-    width: 100%;
-    display:none;
-        text-align: center;
-    z-index: 9999999;
-    background: black;
-}
-.audiowarning_check2 a
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 30px;
-display: inline-block;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-color:white;
-}
-
-
-
-@media only screen and (max-width: 600px) {
-
-  .audiowarning_check2 a
-{
-
-width:100%;
-height:30px;
-text-transform: uppercase;
-font-size: 20px;
-
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-color:white;
-}
-
-
-
-}
-</style>
-</div>
-
-
-
-    <script>
-      function play() {
-        var audio = new Audio('media/loadingbar1_1.mp3');
-        audio.play();
-      }
-      </script>
-
-
-
-
-<div class="textintro1">
-  <h1>"so i had an idea...
-</h1>
-<style>
-
-.textintro1 {
-  position: fixed;
-  left: 0px;
-  top: 100px;
-  width: 100%;
-  height: 100%;
-    display:none;
-  text-align: center;
-  z-index: 9999999;
-  background: black;
-}
-
-.textintro1 h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 30px;
-position:absolute;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-@media only screen and (max-width: 600px) {
-
-.textintro1 h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-position:absolute;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-
-}
-
-</style>
-</div>
-
-<div class="textintro1blur">
-  <h1>"so i had an idea...
-</h1>
-<style>
-
-.textintro1blur {
-  position: fixed;
-  left: 0px;
-  top: 100px;
-  width: 100%;
-  filter: blur(3px);
-  height: 100%;
-    display:none;
-  text-align: center;
-  z-index: 9999999;
-  background: black;
-}
-
-.textintro1blur h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 30px;
-position:absolute;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-@media only screen and (max-width: 600px) {
-
-.textintro1blur h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-position:absolute;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-
-}
-
-</style>
-</div>
-
-
-
-<div class="textintro2">
-  <h1>...and it's still an idea"
-</h1>
-<style>
-
-.textintro2 {
-  position: fixed;
-  left: 0px;
-  top: 200px;
-  width: 100%;
-
-  height: 100%;
-    display:none;
-  text-align: center;
-  z-index: 9999999;
-  background: black;
-}
-
-.textintro2 h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 30px;
-position:absolute;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-@media only screen and (max-width: 600px) {
-
-.textintro2 h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-position:absolute;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-
-}
-
-</style>
-</div>
-
-
-
-<div class="textintro2extra">
-  <h1>- aryan
-</h1>
-<style>
-
-.textintro2extra {
-  position: fixed;
-  left: 0px;
-  top: 260px;
-  width: 100%;
-
-
-    display:none;
-  text-align: center;
-  z-index: 9999999;
-  background: black;
-}
-
-.textintro2extra h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 30px;
-position:absolute;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-@media only screen and (max-width: 600px) {
-
-.textintro2extra h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-position:absolute;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #ffffff 0.42%, #ca7cff 33.33%, rgb(233, 113, 231) 53.78%, rgb(255, 83, 208) 74.37%, #ff00b5);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-
-}
-
-</style>
-</div>
 
 
 
@@ -930,32 +484,6 @@ letter-spacing:7px;
 
 
 
-<div id = "blinkandmiss">
-  <img src="media/bnm.JPG"  width="300" height="500">
-  </div>
-  <style>
-
-	#blinkandmiss {
-		color: white;
-		position: relative;
-
-		display: none;
-		text-align: center;width: 100%;
-position: absolute;
-top: 50%;
-  transform:translateY(-50%);
-	}
-	#blinkandmiss img {
-		color: white;
-
-
-
-		text-align: center;
-
-	}
-    </style>
-
-
 <div class="majorreveal2">
   <h1>check this place later,<br> thank you
 </h1>
@@ -963,7 +491,7 @@ top: 50%;
 
 .majorreveal2 {
   position: absolute;
-        top: 50%;
+        top: 15%;
         transform:translateY(-50%);
   left: 0px;
 
@@ -1025,6 +553,7 @@ letter-spacing:7px;
 
 </style>
 </div>
+
 
 
 

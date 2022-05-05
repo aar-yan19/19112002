@@ -5,15 +5,16 @@
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	 <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	 	<style>
 
 
     .loading {
-    	position: fixed;
+
     	left: 0px;
-    	top: 0px;
+    	top:0;
     	width: 100%;
     	height: 100%;
 			text-align: center;
@@ -25,128 +26,20 @@
 
   width:100%;
 
-text-transform: uppercase;
-
-  font-size: 30px;
-  position:absolute;
-  font-weight: lighter;
-  font-family: sans-serif;
+text-transform: lowercase;
+margin-left: 15px;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: boldfit;
 z-index: 999999;
-  text-align:center;
-  letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-align:left;
+
+color:rgb(78, 78, 78);
 
 }
 
 
 
-
-.loading2 {
-    	position: fixed;
-    	left: 0px;
-    	top: 0px;
-    	width: 100%;
-      display: none;
-    	height: 100%;
-			text-align: center;
-    	z-index: 9999999;
-
-    }
-.loadingbar2 h1
-{
-
-  width:100%;
-
-text-transform: uppercase;
-filter: blur(3px);
-  font-size: 30px;
-  pointer-events: none;
-  position:absolute;
-  font-weight: lighter;
-  font-family: sans-serif;
-z-index: 999999;
-  text-align:center;
-  letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-
-@media only screen and (max-width: 600px) {
-
-
-  .loading {
-    	position: fixed;
-    	left: 0px;
-    	top: 0px;
-    	width: 100%;
-    	height: 100%;
-			text-align: center;
-    	z-index: 9999999;
-
-    }
-.loadingbar h1
-{
-
-  width:100%;
-
-text-transform: uppercase;
-
-  font-size: 20px;
-  position:absolute;
-  font-weight: lighter;
-  font-family: sans-serif;
-z-index: 999999;
-  text-align:center;
-  letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-
-
-
-.loading2 {
-    	position: fixed;
-    	left: 0px;
-    	top: 0px;
-    	width: 100%;
-      display: none;
-    	height: 100%;
-			text-align: center;
-    	z-index: 9999999;
-
-    }
-.loadingbar2 h1
-{
-
-  width:100%;
-
-text-transform: uppercase;
-filter: blur(3px);
-  font-size: 20px;
-  pointer-events: none;
-  position:absolute;
-  font-weight: lighter;
-  font-family: sans-serif;
-z-index: 999999;
-  text-align:center;
-  letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-}
 
 
 
@@ -155,6 +48,7 @@ z-index: 999999;
   @font-face { font-family: Rudiment; src: url('fonts/Rudiment.ttf'); }
   @font-face { font-family: pirulenrg; src: url('fonts/pirulenrg.otf'); }
   @font-face { font-family: avenir; src: url('fonts/avenir.ttf'); }
+  @font-face { font-family: boldfit; src: url('fonts/bold.otf'); }
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
@@ -163,20 +57,23 @@ z-index: 999999;
 
 	$(window).load(function() {
 
-	$(".loading").delay(1000).hide(0);
-  $(".loading2").delay(1000).show(0);
-        $(".audiowarning").delay(1000).show(0);
-        $(".audiowarning_check").delay(1000).show(0);
+	$(".loading").delay(1000).fadeOut();
+
+        $(".audiowarning").delay(1000).fadeIn(1500);
+        $(".audiowarning_check").delay(1000).fadeIn(1500);
 
 	});
 
 
   $(document).ready(function(){
   $( ".audiowarning_check" ).click(function() {
-    $(".majorreveal").delay(1500).fadeIn(1500);
-    $(".majorreveal2").delay(5200).fadeIn(1500);
-    $(".replay").delay(12000).fadeIn(1500);
-    $(".sample").delay(12000).fadeIn(1500);
+    $(".replay").delay(1000).fadeIn(1000);
+    $(".btn3").delay(1400).fadeIn(1000);
+    $(".btn4").delay(1400).fadeIn(1000);
+    $(".majorreveal").delay(1200).fadeIn(1000);
+    $(".majorreveal2").delay(1400).fadeIn(1000);
+    $(".bodytext1").delay(1400).fadeIn(1000);
+    $(".imagewrapper").delay(1600).fadeIn(1000);
     $(".audiowarning_check").hide();
     $(".audiowarning").hide();
     $(".audiowarning_check").hide();
@@ -208,9 +105,11 @@ z-index: 999999;
 		<style>
 	    *{
 
-	background:black;
+	background:rgb(25, 25, 25);
+margin:0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  text-transform: lowercase;
 
 }
 
@@ -224,7 +123,7 @@ a {
 }
 
 body{
-     -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+     -webkit-tap-highlight-color:  rgba(56, 56, 56, 0);
 
 }
 
@@ -248,11 +147,39 @@ input[type="submit"]:active{
   </div>
 </div>
 
-<div class="loading2">
-  <div class='loadingbar2' id='loadingbar2'>
-    <h1>loaded
-</h1>
-</div>
+
+<div class="audiowarning_check">
+  <a href="#!" onclick="play();" class="buttons" >yes</a>
+
+<style>
+
+.audiowarning_check {
+    position: relative;
+margin-left:15px;
+    display:none;
+        text-align: center;
+    z-index: 9999999;
+
+}
+.audiowarning_check a
+{
+
+width:100%;
+text-transform: lowercase;
+font-size: 20px;
+display: inline-block;
+font-weight:lighter;
+font-family: boldfit;
+z-index: 999999;
+text-align:left;
+
+color:white;opacity:0.7;
+
+}
+
+
+
+</style>
 </div>
 
 <div class="audiowarning">
@@ -261,141 +188,97 @@ input[type="submit"]:active{
 <style>
 
 .audiowarning {
-    	position: fixed;
-    	left: 0px;
-    	top: 100px;
-    	width: 100%;
-    	height: 100%;
+    	position: relative;
+    	margin-left: 15px;
         display:none;
-			text-align: center;
     	z-index: 9999999;
-    	background: black;
+    	background: none;
     }
 .audiowarning h1
 {
 
   width:100%;
 
-  text-transform: uppercase;
-  font-size: 20px;
-  position:absolute;
-  font-weight:lighter;
-  font-family: avenir;
-z-index: 999999;
-  text-align:center;
-  letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
+  text-transform: lowercase;
+  font-size: 50px;
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight:bolder;
+
+  font-family: boldfit;
+z-index: 999999999999;
+  text-align:left;
+
+  color:rgb(78, 78, 78);
+
 
 }
 
 @media only screen and (max-width: 600px) {
 
-.audiowarning {
-    	position: fixed;
-    	left: 0px;
-    	top: 100px;
-    	width: 100%;
-    	height: 100%;
-        display:none;
-			text-align: center;
-    	z-index: 9999999;
-    	background: black;
-    }
-.audiowarning h1
-{
-
-  width:100%;
-
-  text-transform: uppercase;
-  font-size: 20px;
-  position:absolute;
-  font-weight:lighter;
-  font-family: avenir;z-index: 999999;
-  text-align:center;
-  letter-spacing:7px;
-  background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
 }
     </style>
   </div>
 
 
-<div class="audiowarning_check">
-    <a href="#!" onclick="play();" class="buttons" >yes</a>
-
-<style>
-
-.audiowarning_check {
-      position: fixed;
-
-      top: 175px;
-      width: 100%;
-
-      width: 100%;
-      display:none;
-          text-align: center;
-      z-index: 9999999;
-      background: black;
-  }
-.audiowarning_check a
-{
-
-width:100%;
-text-decoration: underline;
-text-transform: uppercase;
-font-size: 20px;
-display: inline-block;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-color:white;
-
-}
-
-
-@media only screen and (max-width: 600px) {
-  .audiowarning_check a
-{
-
-width:100%;
-height:20px;
-text-transform: uppercase;
-font-size: 20px;
-text-decoration: underline;
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-color:white;
-
-}
-
-}
-
-  </style>
-</div>
 
 
 <script>
 
-  function play() {
+
+
+    function play() {
       var audio = document.getElementById("audio");
-      audio.play();
+      if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+
     }
 
 
   </script>
-  <audio id="audio" preload="auto" src="media/19112002promo.mp3"></audio>
+  <audio id="audio" preload="auto" loop = "true" src="media/compression.mp3"></audio>
+
+
+
+<!--onclick="play();"-->
+
+<div class="replay">
+  <a href="#!" onclick="play();" class="buttons" ><i style="font-size:24px" class="fa">&#xf04c;</i>/<i style="font-size:24px" class="fa">&#xf04b;</i> music</a>
+
+<style>
+
+.replay {
+  position: relative;
+margin-left:15px;
+display:none;
+
+      z-index: 9999999;
+
+  }
+.replay a
+{
+
+width:100%;
+
+text-transform: lowercase;
+font-size: 20px;
+display: inline-block;
+font-weight:lighter;
+font-family: boldfit;
+z-index: 999999;
+text-align:left;
+
+color:white;opacity:0.7;
+
+}
+
+
+
+</style>
+</div>
+
 
 
 
@@ -406,15 +289,14 @@ color:white;
 <style>
 
 .majorreveal {
-  position: absolute;
-        top: 50%;
-        transform:translateY(-50%);
-  left: 0px;
-  width: 100%;
+  position: relative;
+
+  margin-left: 15px;
+
     display:none;
-  text-align: center;
+  text-align: left;
   z-index: 9999999;
-  background: black;
+  background: transparent;
 }
 
 .majorreveal h1
@@ -422,109 +304,43 @@ color:white;
 
 width:100%;
 
-text-transform: uppercase;
+text-transform: lowercase;
 font-size: 200px;
 font-weight:bolder;
-font-family: pirulenrg;
+font-family: boldfit;
 z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-	background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+text-align:left;
+
+
 }
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
-
 
 @media only screen and (max-width: 600px) {
-
-.majorreveal h1
+  .majorreveal h1
 {
 
-width:100%;
-
-text-transform: uppercase;
-font-size: 50px;
-
-font-weight:bolder;
-font-family: pirulenrg;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 0px #00000000;
-
-}
-
+font-size: 100px;
 
 
 }
-
+}
 </style>
+
+
 </div>
 
 
 
 <div class="majorreveal2">
-  <h1>AN ORIGINAL MUSICAL EXPERIENCE <br>19/11/2022 OR BEFORE THAT
+  <h1>THE GENIUS OF CREATIVE DYSLEXIA
 </h1>
+
 <style>
 
 .majorreveal2 {
-  position: absolute;
-        top: 15%;
-        transform:translateY(-50%);
-  left: 0px;
-
-  width: 100%;
-
-
+  position: relative;
+  margin-left:15px;
     display:none;
-  text-align: center;
+  text-align: left;
   z-index: 9999999;
   background: black;
 }
@@ -533,181 +349,86 @@ background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
 {
 
 width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-font-weight:lighter;
+text-transform: lowercase;
+font-size: 50px;
+font-weight:bolder;
 font-family: sans-serif;
 z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+text-align:left;
+color:rgb(78, 78, 78);
 
 }
 
 
 
-
-@media only screen and (max-width: 600px) {
-
-.majorreveal2 h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 0px #00000000;
-}
-
-
-
-}
 
 </style>
 </div>
 
 
 
-<div class="replay">
-  <a href="#!" onclick="play();" class="buttons" >replay teaser music</a>
+
+
+
+<div class = "imagewrapper">
+  <img src="img/me.jpg" alt="Girl in a jacket" style="width:600px;height:600px;">
+<style>
+  .imagewrapper{
+position: absolute;
+top: 50%;
+display: none;
+transform: translateY(-50%);
+left: 0;
+width: 100%;
+opacity:0.07;
+z-index: 999999999999;
+text-align: center;
+
+
+  }
+  </style>
+
+
+</div>
+
+
+
+
+
+<div class="bodytext1">
+  <h1>I am sure we're taller in another dimension. brb. surviving semesters.
+</h1>
 
 <style>
 
-.replay {
-    position: fixed;
-
-    top: 175px;
-    width: 100%;
-
-    width: 100%;
+.bodytext1 {
+  position: relative;
+  margin-left:15px;
     display:none;
-        text-align: center;
-    z-index: 9999999;
-    background: black;
+  text-align: left;
+  z-index: 9999999;
+  background: black;
 }
-.replay a
+
+.bodytext1 h1
 {
 
 width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-display: inline-block;
-font-weight:lighter;
-font-family: sans-serif;
-text-decoration: underline;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-color:white;
-
-}
-
-
-@media only screen and (max-width: 600px) {
-.replay a
-{
-
-width:100%;
-height:20px;
-text-transform: uppercase;
-font-size: 20px;
-
-font-weight:lighter;text-decoration: underline;
+text-transform: lowercase;
+font-size: 30px;
+font-weight:bolder;
 font-family: sans-serif;
 z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-color:white;
+text-align:left;
+color:rgb(78, 78, 78);
 
 }
 
-}
+
+
 
 </style>
 </div>
-
-
-
-<div class="sample">
-  <a href="sample.html" class="buttons" >listen to track 1 sample</a>
-
-<style>
-
-.sample {
-    position: fixed;
-
-    top: 220px;
-    width: 100%;
-
-    width: 100%;
-    display:none;
-        text-align: center;
-    z-index: 9999999;
-    background: black;
-}
-.sample a
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-display: inline-block;
-font-weight:lighter;
-font-family: sans-serif;
-text-decoration: underline;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-color:white;
-
-}
-
-
-@media only screen and (max-width: 600px) {
-.sample a
-{
-
-width:100%;
-height:20px;
-text-transform: uppercase;
-font-size: 20px;
-
-font-weight:lighter;text-decoration: underline;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-color:white;
-
-}
-
-}
-
-</style>
-</div>
-
-
-
-
-
-
-
-
 
 
 

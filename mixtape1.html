@@ -59,7 +59,9 @@ color:rgb(78, 78, 78);
 
 	$(".loading").delay(1000).fadeOut();
         $(".title").delay(1000).fadeIn(1500);
-        $(".imagewrapper").delay(1000).fadeIn(1500);
+        $(".bodytext1").delay(1000).fadeIn(1500);
+        $("#wrapvideo").delay(1000).fadeIn(1500);
+
 
 	});
 
@@ -125,7 +127,7 @@ input[type="submit"]:active{
 .bodytext1 {
   position: relative;
   margin-left:15px;
-
+display: none;
   text-align: left;
   z-index: 9999999;
   background: black;
@@ -188,10 +190,12 @@ color:white;opacity:0.7;
 </div>
 
 <br>
-<video width="318" height="480" poster="" controls>
-  <source src="track1.mp4" type="video/mp4">
-</video>
+<div id = "wrapvideo" style="display: none;">
 
+<video width="318" height="480" poster="" controls>
+  <source src="videos/track1.mp4" type="video/mp4">
+</video>
+</div>
 
 
 

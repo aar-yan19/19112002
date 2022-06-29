@@ -58,44 +58,11 @@ color:rgb(78, 78, 78);
 	$(window).load(function() {
 
 	$(".loading").delay(1000).fadeOut();
-
-        $(".audiowarning").delay(1000).fadeIn(1500);
-        $(".audiowarning_check").delay(1000).fadeIn(1500);
+        $(".btn1").delay(1000).fadeIn(1500);
+        $(".imagewrapper").delay(1000).fadeIn(1500);
 
 	});
 
-
-  $(document).ready(function(){
-  $( ".audiowarning_check" ).click(function() {
-    $(".replay").delay(1000).fadeIn(1000);
-    $(".btn3").delay(1400).fadeIn(1000);
-    $(".btn4").delay(1400).fadeIn(1000);
-    $(".majorreveal").delay(1200).fadeIn(1000);
-    $(".majorreveal2").delay(1400).fadeIn(1000);
-    $(".bodytext1").delay(1400).fadeIn(1000);
-    $(".imagewrapper").delay(1600).fadeIn(1000);
-    $(".audiowarning_check").hide();
-    $(".audiowarning").hide();
-    $(".audiowarning_check").hide();
-    $(".loading").hide();
-    $(".loading2").hide();
-});
-  });
-
-
-  $(document).ready(function(){
-  $( ".sample" ).click(function() {
-    $(".majorreveal").hide();
-    $(".majorreveal2").hide();
-    $(".replay").hide();
-    $(".sample").hide();
-    $(".audiowarning_check").hide();
-    $(".audiowarning").hide();
-    $(".audiowarning_check").hide();
-    $(".loading").hide();
-    $(".loading2").hide();
-});
-  });
 
 
 
@@ -148,12 +115,12 @@ input[type="submit"]:active{
 </div>
 
 
-<div class="audiowarning_check">
-  <a href="#!" onclick="play();" class="buttons" >yes</a>
+<div class="btn1">
+  <a href="mixtape1.html" class="buttons" >listen to "vanilla whey" mixtape -></a>
 
 <style>
 
-.audiowarning_check {
+.btn1 {
     position: relative;
 margin-left:15px;
     display:none;
@@ -161,14 +128,15 @@ margin-left:15px;
     z-index: 9999999;
 
 }
-.audiowarning_check a
+.btn1 a
 {
 
 width:100%;
 text-transform: lowercase;
-font-size: 20px;
+font-size: 30px;
 display: inline-block;
 font-weight:lighter;
+text-decoration: underline;
 font-family: boldfit;
 z-index: 999999;
 text-align:left;
@@ -181,218 +149,6 @@ color:white;opacity:0.7;
 
 </style>
 </div>
-
-<div class="audiowarning">
-      <h1>is your volume up?
-</h1>
-<style>
-
-.audiowarning {
-    	position: relative;
-    	margin-left: 15px;
-        display:none;
-    	z-index: 9999999;
-    	background: none;
-    }
-.audiowarning h1
-{
-
-  width:100%;
-
-  text-transform: lowercase;
-  font-size: 50px;
-
-  font-weight:bolder;
-
-  font-family: boldfit;
-z-index: 999999999999;
-  text-align:left;
-
-  color:rgb(78, 78, 78);
-
-
-}
-
-@media only screen and (max-width: 600px) {
-
-}
-    </style>
-  </div>
-
-
-
-
-<script>
-
-
-
-    function play() {
-      var audio = document.getElementById("audio");
-      if (audio.paused) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
-
-    }
-
-
-  </script>
-  <audio id="audio" preload="auto" loop = "true" src="media/compression.mp3"></audio>
-
-
-
-<!--onclick="play();"-->
-
-<div class="replay">
-  <a href="#!" onclick="play();" class="buttons" ><i style="font-size:24px" class="fa">&#xf04c;</i>/<i style="font-size:24px" class="fa">&#xf04b;</i> music</a>
-
-<style>
-
-.replay {
-  position: relative;
-margin-left:15px;
-display:none;
-
-      z-index: 999999999999999999999;
-  }
-.replay a
-{
-
-width:100%;
-
-text-transform: lowercase;
-font-size: 20px;
-display: inline-block;
-font-weight:lighter;
-font-family: boldfit;
-
-text-align:left;
-      z-index: 999999999999999999999;
-color:white;opacity:0.7;
-
-}
-
-
-
-</style>
-</div>
-
-
-
-
-
-<div class="majorreveal">
-  <h1>19112002
-</h1>
-<style>
-
-.majorreveal {
-  position: relative;
-
-  margin-left: 15px;
-
-    display:none;
-  text-align: left;
-  z-index: 9999999;
-  background: transparent;
-}
-
-.majorreveal h1
-{
-
-width:100%;
-
-text-transform: lowercase;
-font-size: 200px;
-font-weight:bolder;
-font-family: boldfit;
-z-index: 999999;
-text-align:left;
-
-
-}
-	
-	@media only screen and (max-width: 700px) {
-  .majorreveal h1
-{
-
-font-size: 100px;
-
-
-}
-}
-
-@media only screen and (max-width: 600px) {
-  .majorreveal h1
-{
-
-font-size: 100px;
-
-
-}
-}
-	@media only screen and (max-width: 500px) {
-
-  .majorreveal h1
-{
-
-font-size: 90px;
-
-
-}
-}
-@media only screen and (max-width: 400px) {
-  .majorreveal h1
-{
-
-font-size: 80px;
-
-
-}
-}
-</style>
-
-
-</div>
-
-
-
-<div class="majorreveal2">
-  <h1>THE GENIUS OF CREATIVE DYSLEXIA
-</h1>
-
-<style>
-
-.majorreveal2 {
-  position: relative;
-  margin-left:15px;
-    display:none;
-  text-align: left;
-  z-index: 9999999;
-  background: black;
-}
-
-.majorreveal2 h1
-{
-
-width:100%;
-text-transform: lowercase;
-font-size: 50px;
-font-weight:bolder;
-font-family: sans-serif;
-z-index: 999999;
-text-align:left;
-color:rgb(78, 78, 78);
-
-}
-
-
-
-
-</style>
-</div>
-
 
 
 
@@ -424,7 +180,7 @@ text-align: center;
 
 
 <div class="bodytext1">
-  <h1>I am sure we're taller in another dimension. brb. surviving semesters.
+  <h1>"I am sure we're taller in another dimension". surviving semesters. aryan btw.
 </h1>
 
 <style>
@@ -432,7 +188,7 @@ text-align: center;
 .bodytext1 {
   position: relative;
   margin-left:15px;
-    display:none;
+
   text-align: left;
   z-index: 9999999;
   background: black;
@@ -443,7 +199,7 @@ text-align: center;
 
 width:100%;
 text-transform: lowercase;
-font-size: 30px;
+font-size: 20px;
 font-weight:bolder;
 font-family: sans-serif;
 z-index: 999999;

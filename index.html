@@ -9,7 +9,6 @@
 	 <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
 	 	<style>
  @font-face { font-family: tex; src: url('fonts/tex-gyre-adventor.regular.otf'); }
 
@@ -64,6 +63,7 @@ color:rgb(78, 78, 78);
         $(".btn1").delay(1000).fadeIn(1500);
         $(".imagewrapper").delay(1000).fadeIn(1500);
         $(".bodytext1").delay(1000).fadeIn(1500);
+          $(".bodytext2").delay(1000).fadeIn(1500);
        // $(".majorreveal").delay(1000).fadeIn(1500);
 
 
@@ -78,7 +78,7 @@ color:rgb(78, 78, 78);
 		<style>
 	    *{
 
-	background:WHITE;
+	background:rgb(22, 22, 22);
 margin:0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -126,7 +126,7 @@ input[type="submit"]:active{
 <div class = "imagewrapper">
 
   <div class = "image1">
-    <img src="img/radio2002.001.jpeg" style="width:1920px;height:1080px;">
+    <img src="img/cover.jpeg" style="width:1080px;height:1080px;">
 
 </div>
 
@@ -153,16 +153,37 @@ text-align: center;
 
 
 
+<audio id="myAudio" src="media/fallingforyou20.wav" preload="auto">
+</audio>
 
 
+
+<script>
+
+  var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+</script>
+
+<br>
 <div class="btn1">
-  <a href="index.html" class="buttons" >Not quiet built yet -></a>
+<a onClick="togglePlay()">Play/Pause</a>
 
 <style>
 
 .btn1 {
     position: relative;
-
+cursor: pointer;
     display:none;
         text-align: center;
     z-index: 9999999;
@@ -170,7 +191,7 @@ text-align: center;
 }
 .btn1 a
 {
-
+cursor: pointer;
 width:100%;
 font-size: 22px;
 display: inline-block;
@@ -180,7 +201,7 @@ font-family: boldfit;
 z-index: 999999;
 text-align:center;
 
-color:black;opacity:0.7;
+color:white;opacity:0.7;
 
 }
 
@@ -190,9 +211,12 @@ color:black;opacity:0.7;
 </div>
 
 
-
+<br><br>
 <div class="bodytext1">
-  <h1>Original Radio, Music and Films. 19112002.
+  <h1>What time you coming out?<br>
+We started losing light<br>
+I'll never make it right<br>
+If you don't wander off<br>
 </h1>
 
 <style>
@@ -206,6 +230,41 @@ display: none;
 }
 
 .bodytext1 h1
+{
+
+width:100%;
+
+font-size: 15px;
+font-weight:bolder;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+color:rgb(78, 78, 78);
+
+}
+
+
+
+
+</style>
+</div>
+<br>
+<div class="bodytext2">
+  <h1>THE 1975,Fallingforyou
+</h1>
+
+<style>
+
+.bodytext2 {
+  position: relative;
+display: none;
+  text-align: left;
+  z-index: 9999999;
+  text-decoration: line-through;
+  background: black;
+}
+
+.bodytext2 h1
 {
 
 width:100%;

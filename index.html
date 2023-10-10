@@ -29,7 +29,7 @@
   width:100%;
 
 
-  font-size: 40px;
+  font-size: 30px;
 
   font-family: boldfit;
 
@@ -61,9 +61,15 @@ color:rgb(78, 78, 78);
 
 	$(".loading").delay(1000).fadeOut();
         $(".btn1").delay(1000).fadeIn(1500);
+        $(".btn11").delay(1000).fadeIn(1500);
         $(".imagewrapper").delay(1000).fadeIn(1500);
+        $(".titlemain").delay(1000).fadeIn(1500);
+        $(".titlemain2").delay(1000).fadeIn(1500);
+        $(".imagewrapper2").delay(1000).fadeIn(1500);
         $(".bodytext1").delay(1000).fadeIn(1500);
+        $(".bodytext11").delay(1000).fadeIn(1500);
           $(".bodytext2").delay(1000).fadeIn(1500);
+          $(".bodytext22").delay(1000).fadeIn(1500);
        // $(".majorreveal").delay(1000).fadeIn(1500);
 
 
@@ -79,6 +85,7 @@ color:rgb(78, 78, 78);
 	    *{
 
 	background:rgb(22, 22, 22);
+  zoom:0.95;
 margin:0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -122,11 +129,49 @@ input[type="submit"]:active{
 </div>
 
 
+<div class="titlemain">
+  <h1>Personal radio of my archived collection
+</h1>
+
+<style>
+
+.titlemain {
+  position: relative;
+display: none;
+  text-align: left;
+  z-index: 9999999;
+  margin-top: 25px;
+
+}
+
+.titlemain h1
+{
+
+width:100%;
+
+font-size: 30px;
+font-weight:bolder;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+color:white;  background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+</style>
+</div>
+
+
 
 <div class = "imagewrapper">
 
   <div class = "image1">
-    <img src="img/cover.jpeg" style="width:1080px;height:1080px;">
+    <h1>1</h1><img src="img/cover.jpeg" style="width:1080px;height:1080px;">
 
 </div>
 
@@ -144,6 +189,11 @@ zoom:0.35;
 text-align: center;
 
   }
+  .image1 h1{
+ color:white;
+text-align: left;font-size: 45px;font-family: sans-serif;
+
+  }
 
   </style>
 
@@ -153,7 +203,7 @@ text-align: center;
 
 
 
-<audio id="myAudio" src="media/fallingforyou20.wav" preload="auto">
+<audio id="myAudio" src="media/fallingforyouf1.mp3" preload="auto">
 </audio>
 
 
@@ -177,7 +227,7 @@ myAudio.onpause = function() {
 
 <br>
 <div class="btn1">
-<a onClick="togglePlay()">Play/Pause</a>
+<a onClick="togglePlay()">Play/Pause (00:51)</a>
 
 <style>
 
@@ -213,7 +263,7 @@ color:white;opacity:0.7;
 
 <br><br>
 <div class="bodytext1">
-  <h1>(INTERLUDE)<br>What time you coming out?<br>
+  <h1>(INTERLUDE)<br><br>What time you coming out?<br>
 We started losing light<br>
 I'll never make it right<br>
 If you don't wander off<br>
@@ -284,182 +334,179 @@ color:rgb(78, 78, 78);
 </style>
 </div>
 
+<br><br>
 
 
-<div class="majorreveal">
-  <h1>.---- ----.<br><br>.---- .----<br><br>..--- -----<br><br>----- ..---
-</h1>
+
+<div class = "imagewrapper2">
+
+  <div class = "image2">
+    <h1>2</h1><img src="img/ggfm.jpeg" style="width:1080px;height:1080px;">
+
+</div>
+
+<style>
+  .imagewrapper2{
+    text-align: center;
+    display:none;
+    pointer-events: none;
+  }
+  .image2{
+    display: inline-block;
+margin-top: 100px;
+
+zoom:0.35;
+text-align: center;
+
+  }
+  .image2 h1{
+ color:white;font-family: sans-serif;
+text-align: left;font-size: 45px;
+
+  }
+
+  </style>
+
+
+</div>
+
+
+
+
+<audio id="myAudio2" src="media/fff1.mp3" preload="auto">
+</audio>
+
+
+
+<script>
+
+  var myAudio2 = document.getElementById("myAudio2");
+var isPlaying = false;
+
+function togglePlay2() {
+  isPlaying ? myAudio2.pause() : myAudio2.play();
+};
+
+myAudio2.onplaying = function() {
+  isPlaying = true;
+};
+myAudio2.onpause = function() {
+  isPlaying = false;
+};
+</script>
+
+<br>
+<div class="btn11">
+<a onClick="togglePlay2()">Play/Pause (01:22)</a>
+
 <style>
 
-.majorreveal {
-  position: relative;
-margin-top: 50px;
-  width: 100%;
+.btn11 {
+    position: relative;
+cursor: pointer;
     display:none;
-  text-align: center;
-  z-index: 9999999;
+        text-align: center;
+    z-index: 9999999;
+
 }
-
-.majorreveal h1
+.btn11 a
 {
-
+cursor: pointer;
 width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-font-weight:bolder;
-font-family: pirulenrg;
+font-size: 22px;
+display: inline-block;
+font-weight:lighter;
+text-decoration: underline;
+font-family: boldfit;
 z-index: 999999;
 text-align:center;
 
-background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-	background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-}
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
-
-
-@media only screen and (max-width: 600px) {
-
-.majorreveal h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-font-weight:bolder;
-font-family: pirulenrg;
-z-index: 999999;
-text-align:center;
-
-background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 0px #00000000;
+color:white;opacity:0.7;
 
 }
 
 
-
-}
 
 </style>
 </div>
 
 
-
-<div class="majorreveal2">
-  <h1>AN ORIGINAL MUSICAL EXPERIENCE <br>19/11/2022 OR BEFORE THAT
+<br><br>
+<div class="bodytext11">
+  <h1>(INTERLUDE)<br><br>Here's to a good guy, he hooked it up<br>
+Said if I was in NY, I should look you up<br>
+I, first time I'd ever saw you<br>
+And you text nothing like you look<br>
 </h1>
+
 <style>
 
-.majorreveal2 {
-  position: absolute;
-        top: 15%;
-        transform:translateY(-50%);
-  left: 0px;
-
-  width: 100%;
-
-
-    display:none;
-  text-align: center;
+.bodytext11 {
+  position: relative;
+display: none;
+  text-align: left;
   z-index: 9999999;
   background: black;
 }
 
-.majorreveal2 h1
+.bodytext11 h1
 {
 
 width:100%;
 
-text-transform: uppercase;
-font-size: 20px;
-font-weight:lighter;
+font-size: 15px;
+font-weight:bolder;
 font-family: sans-serif;
 z-index: 999999;
 text-align:center;
-letter-spacing:7px;
-background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+color:rgb(78, 78, 78);
 
 }
 
 
 
-
-@media only screen and (max-width: 600px) {
-
-.majorreveal2 h1
-{
-
-width:100%;
-
-text-transform: uppercase;
-font-size: 20px;
-
-font-weight:lighter;
-font-family: sans-serif;
-z-index: 999999;
-text-align:center;
-letter-spacing:7px;
-background-image: -webkit-linear-gradient(209deg, #355C7D, #6C5B7B,#C06C84);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 0px #00000000;
-}
-
-
-
-}
 
 </style>
 </div>
+<br>
+<div class="bodytext22">
+  <h1>FRANK OCEAN,Good Guy
+</h1>
+
+<style>
+
+.bodytext22 {
+  position: relative;
+display: none;
+  text-align: left;
+  z-index: 9999999;
+  text-decoration: line-through;
+  background: black;
+}
+
+.bodytext22 h1
+{
+
+width:100%;
+
+font-size: 15px;
+font-weight:bolder;
+font-family: sans-serif;
+z-index: 999999;
+text-align:center;
+color:rgb(78, 78, 78);
+
+}
+
+
+
+
+</style>
+</div>
+
+
+
+<br><br><br>
 
 
 
